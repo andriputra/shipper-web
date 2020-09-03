@@ -1,0 +1,32 @@
+@import '../../assets/style/main.scss';
+
+.header-bar{
+    padding: 20px;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &-left{
+        .logo-img{
+            width: 130px;
+        }
+    }
+    &-right{
+        .user-data{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            span{
+                &.user-name{
+                    color: $red;
+                    margin-right: 10px;
+                }
+                &.user-avatar{
+                    width: 4%;
+                }
+            }
+        }
+    }
+}

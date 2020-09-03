@@ -1,0 +1,32 @@
+@import './colors';
+
+*{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+    .img-fluid{
+        max-width: 100%;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
+            color: $red;
+        }
+    }
+    ul{
+        padding-left: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+}
