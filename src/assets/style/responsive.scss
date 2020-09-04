@@ -1,6 +1,12 @@
 @import './main.scss';
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .hidden-lg{
+        display: none;
+    }
+    .show-xs{
+        display: none;
+    }
     .header-bar{
         padding: 20px;
         &-left{
@@ -44,6 +50,7 @@
                 &-desc{
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
                     img{
                         &.circle{
                             width: 33%;
@@ -80,6 +87,7 @@
                     display: block;
                     width: 100%;
                     box-sizing: border-box;
+                    margin-bottom: 15px;
                 }
                 button{
                     top: -10px;

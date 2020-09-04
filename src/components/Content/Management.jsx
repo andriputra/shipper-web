@@ -62,11 +62,19 @@ export default class Management extends Component {
                                                 <span className="label">Telepon</span>
                                                 <span className="label-desc">{phone}</span>
                                             </div>
-                                            <div className="driver-label-group">
+                                            <div className="driver-label-group show-lg hidden-xs">
                                                 <span className="label">Email</span>
                                                 <span className="label-desc">{email}</span>
                                             </div>
-                                            <div className="driver-label-group">
+                                            <div className="driver-label-group show-lg hidden-xs">
+                                                <span className="label">Tanggal Lahir</span>
+                                                <span className="label-desc">{dob}</span>
+                                            </div>
+                                            <div className="driver-label-group hidden-lg show-xs">
+                                                <span className="label">Email</span>
+                                                <span className="label-desc">{email}</span>
+                                            </div>
+                                            <div className="driver-label-group hidden-lg show-xs">
                                                 <span className="label">Tanggal Lahir</span>
                                                 <span className="label-desc">{dob}</span>
                                             </div>

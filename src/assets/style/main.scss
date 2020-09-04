@@ -1,6 +1,12 @@
 @import './colors';
 @import './reset';
 
+.show-lg{
+    display: block;
+}
+.hidden-xs{
+    display: none;
+}
 .content-area{
     .item{
         display: flex;

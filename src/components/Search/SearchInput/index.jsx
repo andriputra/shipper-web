@@ -63,17 +63,7 @@ export default class SearchInput extends Component {
                             onChange={this.handleChange}
                         />
                         <button type="submit" value="Submit"><i className="i icon-magnifier"></i></button>
-                        <select
-                            name="alphabetical"
-                            value={this.state.alphabetical}
-                            onChange={this.handleChange}
-                        >
-                            <option selected value="az">
-                                A to Z
-                            </option>
-                            <option value="za">Z to A</option>
-                        </select>
-
+                       
                         {userNames}
 
                     </div>
