@@ -1,0 +1,54 @@
+@import '../../assets/style/main.scss';
+
+.search-bar-area{
+   background-color: $white; 
+   padding: 15px 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   &-title{
+       h2{
+        font-size: 24px;
+        font-weight: 700;
+        color: $red;
+        margin-bottom: 5px;
+       }
+       p{
+           margin: 0px;
+           color: $darkgrey;
+       }
+   }
+   &-action{
+       display: flex;
+       button{
+           &.button-submit{
+                background-color: $red;
+                border-radius: 4px;
+                box-shadow: none;
+                border: none;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: 10px 15px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $darkgrey;
+                }
+               i{
+                   &.icon-plus{
+                       &::before{
+                           background-image: url('../../assets/img/icon-plus.svg');
+                           filter: invert(1);
+                           width: 15px;
+                           height: 15px;
+                           position: initial;
+                           vertical-align: baseline;
+                           margin-left: 8px;
+                       }
+                   }
+               }
+           }
+       }
+   }
+}

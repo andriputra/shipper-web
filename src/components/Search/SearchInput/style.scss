@@ -1,0 +1,37 @@
+@import '../../../assets/style/main.scss';
+
+.search-input{
+    position: relative;
+    margin-right: 20px;
+    input{
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        font-size: 14px;
+        border: 1px solid $bordercolor;
+        padding: 10px 10px 10px 50px;
+        border-radius: 4px;
+    }
+    button{
+        position: absolute;
+        left: 0px;
+        width: 40px;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        i{
+            &.icon-magnifier{
+                &::before{
+                    background-image: url('../../../assets/img/magnifier.svg');
+                    height: 24px;
+                    width: 30px;
+                    top: -13px;
+                    left: -10px; 
+                    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+                }
+            }
+        }
+    }
+}

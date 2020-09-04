@@ -1,35 +1,26 @@
 import React, { Component } from "react";
-import {
-  Route,
-  HashRouter
-} from "react-router-dom";
-import Header from "../src/components/Header";
-import Home from "./Home";
-import About from "./About";
+import { Route, HashRouter } from "react-router-dom";
+import Header from "./components/Header";
+import SideMenu from "./components/SideMenu";
+import ContentLayout from "./components/Content/Layout";
+import Home from "./components/Content/Home";
+import Management from "./components/Content/Management";
+import Pickup from "./components/Content/Pickup";
 
 class Main extends Component {
-  render() {
-    return (
-      <HashRouter>
-        <Header/>
-        <div className="home">
-          
-          <div className="banner">
-            <div className="banner__overlay"/>
-          </div>
-          <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/about" component={About}/>
-          </div>
-          <div className="footer">
-            <div className="copyright">
-              <p>by Agus Andri Putra</p>
-            </div>
-          </div>
-        </div>
-      </HashRouter>
-    );
-  }
+    render() {
+        return (
+            <HashRouter>
+                <Header />
+                <SideMenu />
+                <ContentLayout>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/Management" component={Management} />
+                    <Route exact path="/Pickup" component={Pickup} />
+                </ContentLayout>
+            </HashRouter>
+        );
+    }
 }
 
 export default Main;

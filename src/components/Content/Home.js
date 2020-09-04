@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
-
-class About extends Component {
+export default class Home extends Component {
   render() {
     return (
-      <div className="aboutPage">
-        <h2>About Happy Movie Stream</h2>
+      <div className="home-area">
+        <h2>About Shipper Web App</h2>
         <p>Random Studio Ghibli A free, open-source API for generating random movie data. Like Lorem Ipsum, but for people.</p>
         <p>Praesent tincidunt non est non iaculis. Fusce euismod consequat elit, at aliquet neque. In ac pretium dolor. Mauris molestie orci eu justo 
           consectetur, sit amet consequat arcu pharetra. Proin urna mi, tristique eget porta ac, euismod ut mi. Vivamus nec erat at ante cursus pharetra. Nam egestas sem a justo finibus, at posuere ante posuere. Curabitur ac ante ut lorem porta convallis. Duis volutpat, magna ut tincidunt facilisis, lectus risus consequat enim, sit amet sollicitudin ipsum erat id nunc. Praesent vel lacinia mauris. Ut vitae nisl sapien. Nulla condimentum dolor euismod vestibulum eleifend.</p>
@@ -15,5 +14,3 @@ class About extends Component {
     );
   }
 }
-
-export default About;

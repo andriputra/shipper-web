@@ -1,0 +1,70 @@
+@import '../../assets/style/main.scss';
+
+.side-menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    padding-top: 90px;
+    width: 240px;
+    background-color: $white;
+    z-index: 99;
+    &-list{
+        ul{
+            &.menu{
+                li{
+                    margin-bottom: 5px;
+                    padding-left: 55px;
+                    i{  
+                        &::before{
+                            left: -33px;
+                        }
+                        &.icon-home{
+                            &::before{
+                                background-image: url('../../assets/img/icon-home.svg');
+                            }
+                        }
+                        &.icon-calendar{
+                            &::before{
+                                background-image: url('../../assets/img/icon-calendar.svg');
+                            }
+                        }
+                        &.icon-user{
+                            &::before{
+                                background-image: url('../../assets/img/icon-user.svg');
+                            }
+                        }
+                    }
+                    a{
+                        display: block;
+                        padding: 8px 0px;
+                        position: relative;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black;
+                        &:hover{
+                            color: $red;
+                        }
+                        &.active{
+                            color: $red;
+                            &::before{
+                                content: '';
+                                background-color: $red;
+                                position: absolute;
+                                left: -55px;
+                                display: block;
+                                width: 4px;
+                                height: 100%;
+                                top: 0px;
+                            }
+                            i{
+                                filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

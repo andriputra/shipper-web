@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
     &-left{
         .logo-img{
             width: 130px;

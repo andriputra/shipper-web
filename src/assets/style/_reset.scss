@@ -8,6 +8,22 @@
         font-weight: 600;
         margin-top: 0px;
     }
+    i{
+        &.i{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                left: 0px;
+                top: 0px;
+                display: inline-block;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
     p{
         margin-bottom: 5px;
     }
@@ -17,8 +33,10 @@
     body{
         margin: 0px;
         padding: 0px;
+        background-color: $grey;
     }
     a{
+        text-decoration: none;
         &:hover{
             text-decoration: none;
             color: $red;
