@@ -1,2 +1,69 @@
 @import './colors';
 @import './reset';
+
+.content-area{
+    .item{
+        display: flex;
+        flex-direction: row;
+        &-content{
+            background-color: $white;
+            width: 17%;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &-title{
+                border-bottom: 1px solid $bordercolor;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .driver-id{
+                    span{
+                        font-size: 12px;
+                        &.text-red{
+                            color: $red;
+                            display: inline-block;
+                            margin-left: 5px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            vertical-align: middle;
+                            width: 65px;
+                        }
+                    }
+                }
+            }
+            &-desc{
+                padding: 10px;
+                img{
+                    &.circle{
+                        border-radius: 50%;
+                        width: 40%;
+                        margin: 10px 0px 10px;
+                    }
+                }
+                .driver-description{
+                    .driver-label-group{
+                        margin-bottom: 10px;
+                        .label{
+                            color: $darkgrey;
+                            display: block;
+                            font-size: 10px;
+                        }
+                        .label-desc{
+                            display: block;
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: 'Montserrat', sans-serif;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

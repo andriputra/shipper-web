@@ -10,7 +10,8 @@ export default class Management extends Component {
     }
 
     componentDidMount() {
-        fetch("https://randomuser.me/api/?results=10")
+        // fetch("https://randomuser.me/api/?results=5")
+        fetch('https://randomuser.me/api/?page=${toPage}&seed=qwer&results=5')
             .then(res => res.json())
             .then(parsedJSON => parsedJSON.results.map(data => (
                 {
