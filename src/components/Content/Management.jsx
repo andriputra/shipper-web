@@ -10,8 +10,7 @@ export default class Management extends Component {
     }
 
     componentDidMount() {
-        // fetch("https://randomuser.me/api/?results=5")
-        fetch('https://randomuser.me/api/?page=${toPage}&seed=qwer&results=5')
+        fetch('https://randomuser.me/api/?results=5')
             .then(res => res.json())
             .then(parsedJSON => parsedJSON.results.map(data => (
                 {
@@ -52,7 +51,9 @@ export default class Management extends Component {
                                         </div>
                                     </div>
                                     <div className="item-content-desc">
-                                        <img src={thumbnail} alt={firstName} className="circle img-fluid"/>
+                                        <div className="driver-photo">
+                                            <img src={thumbnail} alt={firstName} className="circle img-fluid"/>
+                                        </div>
                                         <div className="driver-description">
                                             <div className="driver-label-group">
                                                 <span className="label">Nama Driver</span>
@@ -62,19 +63,11 @@ export default class Management extends Component {
                                                 <span className="label">Telepon</span>
                                                 <span className="label-desc">{phone}</span>
                                             </div>
-                                            <div className="driver-label-group show-lg hidden-xs">
+                                            <div className="driver-label-group">
                                                 <span className="label">Email</span>
                                                 <span className="label-desc">{email}</span>
                                             </div>
-                                            <div className="driver-label-group show-lg hidden-xs">
-                                                <span className="label">Tanggal Lahir</span>
-                                                <span className="label-desc">{dob}</span>
-                                            </div>
-                                            <div className="driver-label-group hidden-lg show-xs">
-                                                <span className="label">Email</span>
-                                                <span className="label-desc">{email}</span>
-                                            </div>
-                                            <div className="driver-label-group hidden-lg show-xs">
+                                            <div className="driver-label-group">
                                                 <span className="label">Tanggal Lahir</span>
                                                 <span className="label-desc">{dob}</span>
                                             </div>

@@ -8,6 +8,9 @@ import Management from "./components/Content/Management";
 import Pickup from "./components/Content/Pickup";
 
 class Main extends Component {
+    showSettings (event) {
+        event.preventDefault();
+    }
     render() {
         return (
             <HashRouter>

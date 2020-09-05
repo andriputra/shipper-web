@@ -5,7 +5,7 @@ import './style.scss';
 export default class SideMenu extends Component {
     render() {
         return(
-            <div className="side-menu">
+            <div className="side-menu hidden-xs">
                 <div className="side-menu-list">
                     <ul className="menu">
                         <li><NavLink exact to="/"><i className="i icon-home"></i> Beranda</NavLink></li>
